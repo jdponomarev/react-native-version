@@ -49,6 +49,10 @@ program
 		"Generate build number from the package version number. (e.g. build number for version 1.22.3 will be 1022003)"
 	)
 	.option(
+		"--ignore-expo",
+		"Treat the app as ejected/bare-workflow even if app.json indicates otherwise."
+	)
+	.option(
 		"-t, --target <platforms>",
 		'Only version specified platforms, e.g. "--target android,ios".',
 		list
